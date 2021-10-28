@@ -2,12 +2,11 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
 import "./styles.scss";
-import Buttons from "./../forms/Button";
 import { signInWithGoogle, auth } from "./../../firebase/utils";
 
 import AuthWrapper from "./../AuthWrapper";
 import FormInput from "./../forms/FormInput";
-import Button from "./../forms/Button";
+import Buttons from "./../forms/Button";
 
 const initialState = {
   email: "",
@@ -83,7 +82,7 @@ class SignIn extends Component {
             </div>
 
             <div className="links">
-              <Link tp="/recovery">Reset Password</Link>
+              <Link to="/recovery">Reset Password</Link>
             </div>
           </form>
         </div>
